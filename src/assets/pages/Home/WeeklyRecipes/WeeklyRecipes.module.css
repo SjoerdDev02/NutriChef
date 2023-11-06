@@ -1,0 +1,32 @@
+.weeklyRecipesContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0;
+    background-color: var(--green);
+}
+
+.weeklyRecipesContainer h1 {
+    color: var(--white);
+}
+
+.weeklyRecipesContainer > div {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .weeklyRecipesContainer > div {
+        width: 75%;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 0;
+        gap: 3rem;
+    }
+}

@@ -1,0 +1,22 @@
+.layoutContainer {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.layoutContainer {
+    background-image: var(--backgroundImg-phone);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+    .layoutContainer {
+        background-image: var(--backgroundImg-desktop);
+        align-items: flex-start;
+        height: 100vh;
+    }
+}

@@ -1,0 +1,35 @@
+.homeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 2rem;
+    color: var(--white);
+}
+
+.homeContainer h1 {
+    font-size: 4rem;
+}
+
+.homeContainer h1 span {
+    color: var(--green);
+}
+
+.homeContainer h3 {
+    margin: 1rem 5rem 2rem 5rem;
+}
+
+@media screen and (min-width: 768px) {
+    .homeContainer {
+        align-items: flex-start;
+        text-align: left;
+        padding: 0;
+        width: 60%;
+        padding: 0 0 0 4rem;
+    }
+
+    .homeContainer h3 {
+        margin: 1rem 0rem 2rem 0rem;
+    }
+}

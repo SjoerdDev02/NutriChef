@@ -1,0 +1,36 @@
+.cardContainer {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.cardContainer > *:first-child {
+    padding: 3rem;
+    background-color: transparent;
+}
+
+.cardContainer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.cardContainer div div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: var(--white);
+}
+
+.cardContainer > *:last-child {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background-color: var(--dark-blue);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
