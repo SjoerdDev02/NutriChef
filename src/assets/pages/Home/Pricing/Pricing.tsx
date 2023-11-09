@@ -1,28 +1,28 @@
-import styles from './Pricing.module.css';
-import Button from '../../../components/Button/Button';
+import styles from "./Pricing.module.css";
+import CTAButton from "../../../components/CtaButton/CtaButton";
 
 const Pricing = () => {
     return (
         <section className={styles.pricingContainer}>
-            <h1>Weekly Top Recipes</h1>
+            <h2>Weekly Top Recipes</h2>
             <div>
                 <article>
                     <h2>One Recipe</h2>
                     <h5>€1</h5>
                     <p>€1/recipe</p>
-                    <Button>Get Started</Button>
+                    <CTAButton page="/recipes">Get Started</CTAButton>
                 </article>
                 <article>
                     <h2>Three Recipes</h2>
                     <h5>€3</h5>
                     <p>€0,60/recipe</p>
-                    <Button>Get Started</Button>
+                    <CTAButton page="/recipes">Get Started</CTAButton>
                 </article>
                 <article>
                     <h2>Ten Recipes</h2>
                     <h5>€5</h5>
                     <p>€0,50/recipe</p>
-                    <Button>Get Started</Button>
+                    <CTAButton page="/recipes">Get Started</CTAButton>
                 </article>
             </div>
         </section>

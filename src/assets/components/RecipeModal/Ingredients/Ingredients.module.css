@@ -1,0 +1,18 @@
+.ingredientsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.ingredientsContainer p, .ingredientsContainer li {
+    color: var(--dark-blue);
+    text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+    .ingredientsContainer {
+        margin: 1rem 0 4rem 0;
+    }
+}

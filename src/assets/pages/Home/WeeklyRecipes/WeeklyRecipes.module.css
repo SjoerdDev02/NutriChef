@@ -8,7 +8,7 @@
     background-color: var(--green);
 }
 
-.weeklyRecipesContainer h1 {
+.weeklyRecipesContainer h2 {
     color: var(--white);
 }
 
@@ -16,17 +16,14 @@
     margin-top: 2rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
     gap: 2rem;
     padding: 0 2rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1400px) {
     .weeklyRecipesContainer > div {
-        width: 75%;
         grid-template-columns: repeat(4, 1fr);
-        padding: 0;
-        gap: 3rem;
     }
 }

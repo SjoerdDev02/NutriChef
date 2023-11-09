@@ -1,0 +1,55 @@
+.checkoutPage {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/backgrounds/checkout/phone-checkout-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.checkoutContainer {
+    background-color: var(--white);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkoutContainer h1 {
+    color: var(--green);
+}
+
+.checkoutContainer span {
+    background-color: var(--green);
+    color: var(--white);
+    padding: 0.5rem;
+}
+
+.checkoutContainer > div {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .checkoutPage {
+        background-image: url('/backgrounds/checkout/desktop-checkout-bg.jpg');
+        height: 100vh;
+    }
+
+    .checkoutContainer {
+        padding: 5rem;
+    }
+
+    .checkoutContainer > div {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 3rem;
+    }
+}

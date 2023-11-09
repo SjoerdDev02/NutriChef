@@ -1,5 +1,7 @@
-import NavBar from "../components/navigation/NavBar";
 import styles from './MainLayout.module.css';
+import { useState, useCallback } from "react";
+import CartModal from "../components/CartModal/CartModal";
+import NavBar from "../components/Navigation/NavBar";
 
 type BackgroundProps = {
   phone: string,
@@ -7,14 +9,21 @@ type BackgroundProps = {
 }
 
 const MainLayout = ({ children, background }: { children: React.ReactNode, background: BackgroundProps }) => {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleCartButtonClick = useCallback(() => {
+    setShowModal((prevState) => !prevState);
+  }, []);
+
   const root = document.documentElement;
   root.style.setProperty('--backgroundImg-phone', `url(${background.phone})`);
   root.style.setProperty('--backgroundImg-desktop', `url(${background.desktop})`);
 
   return (
       <div className={styles.layoutContainer}>
-          <NavBar />
-          <main role='main'>{children}</main>
+          <NavBar onCartButtonClick={handleCartButtonClick} />
+          <section>{children}</section>
+          {showModal && <CartModal onCartButtonClick={handleCartButtonClick} />}
       </div>
   );
 }

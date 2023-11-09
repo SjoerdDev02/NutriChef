@@ -1,18 +1,34 @@
+import { useState, useEffect, useMemo } from 'react';
 import Card from '../../../components/Card/Card';
+import { RecipeType } from '../../../types/RecipeType';
 import styles from './WeeklyRecipes.module.css';
+import useGetRecipes from '../../../hooks/useGetRecipes';
 
 const WeeklyRecipes = () => {
+    const [recipes, setRecipes] = useState<RecipeType[]>([]);
+
+    const getRecipes = useGetRecipes();
+
+    useEffect(() => {
+        const fetchRecipesData = async () => {
+            const data: RecipeType[] = await getRecipes(undefined, undefined);
+            setRecipes(data);
+        };
+        fetchRecipesData();
+    }, []);
+
+    const recipeCards = useMemo(() => recipes.slice(0, 4).map((recipe, index) => (
+        <Card key={index} recipe={recipe} />
+    )), [recipes]);
+
     return (
         <section className={styles.weeklyRecipesContainer}>
-            <h1>Weekly Top Recipes</h1>
+            <h2>Weekly Top Recipes</h2>
             <div>
-                <Card imgSrc='/mock/mealOne.png' title='Black Pasta' rating={4} />
-                <Card imgSrc='/mock/mealTwo.png' title='Black Pasta' rating={2} />
-                <Card imgSrc='/mock/mealThree.png' title='Black Pasta' rating={3} />
-                <Card imgSrc='/mock/mealThree.png' title='Black Pasta' rating={3} />
+                {recipeCards}
             </div>
         </section>
     );
-}
+};
 
 export default WeeklyRecipes;

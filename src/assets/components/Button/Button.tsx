@@ -1,9 +1,9 @@
 import styles from './Button.module.css';
 
-const Button = ({ children }: { children: React.ReactNode }) => {
+const Button = ({ children, onClick }: { children: React.ReactNode, onClick: () => void }) => {
   return (
-    <button className={styles.btn}>{children}</button>
-  )
+    <button className={styles.btn} onClick={onClick}>{children}</button>
+  );
 }
 
-export default Button
+export default Button;

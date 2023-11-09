@@ -1,0 +1,42 @@
+.orderContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: var(--dark-blue);
+}
+
+.orderContainer > div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.orderContainer p {
+    color: var(--dark-blue);
+}
+
+.orderContainer article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.orderContainer article div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+    .orderContainer {
+        margin-top: 2rem;
+    }
+}

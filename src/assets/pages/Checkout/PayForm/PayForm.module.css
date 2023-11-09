@@ -1,0 +1,71 @@
+.checkoutFormContainer {
+    height: 100%;;
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.checkoutFormContainer form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.formFields {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+}
+
+.formGroup p {
+    color: red;
+}
+
+.formGroup input {
+    background-color: #F6F6F6;
+    padding: 0.2rem;
+    color: var(--dark-blue);
+    outline: none;
+}
+
+.formGroup select {
+    background-color: #F6F6F6;
+    border: none;
+    outline: none;
+}
+
+.btn {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    background-color: var(--green);
+    box-shadow: inset 0 0 0 0 #4B7D32;
+    -webkit-transition: ease-out 0.8s;
+    -moz-transition: ease-out 0.8s;
+    transition: ease-out 0.8s;
+}
+
+.btn:hover {
+    box-shadow: inset 400px 0 0 0 #4B7D32;
+}

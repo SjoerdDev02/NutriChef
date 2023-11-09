@@ -1,0 +1,23 @@
+.recipesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.recipesContainer h1 {
+    font-size: 4rem;
+    color: var(--white);
+}
+
+@media screen and (min-width: 768px) {
+    .recipesContainer {
+        align-items: flex-start;
+        text-align: left;
+        padding: 0;
+        width: 60%;
+        padding: 0 0 0 4rem;
+    }
+}

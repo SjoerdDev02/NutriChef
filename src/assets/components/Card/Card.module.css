@@ -4,6 +4,8 @@
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
+    position: relative;
+    padding-bottom: 6rem;
 }
 
 .cardContainer > *:first-child {
@@ -11,9 +13,9 @@
     background-color: transparent;
 }
 
-.cardContainer div {
+.cardContainer > div {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 1rem;
 }
@@ -28,9 +30,28 @@
 
 .cardContainer > *:last-child {
     width: 100%;
-    position: relative;
+    position: absolute;
     bottom: 0;
     background-color: var(--dark-blue);
+    height: 30%;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+
+.btn {
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    background-color: var(--green);
+    box-shadow: inset 0 0 0 0 #4B7D32;
+    -webkit-transition: ease-out 0.8s;
+    -moz-transition: ease-out 0.8s;
+    transition: ease-out 0.8s;
+}
+
+.btn:hover {
+    box-shadow: inset 400px 0 0 0 #4B7D32;
 }

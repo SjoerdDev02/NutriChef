@@ -1,0 +1,53 @@
+.cartItem {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cartItem img {
+    width: 20%;
+}
+
+.changeAmountContainer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: transparent;
+    border: 1px solid var(--green);
+    border-radius: 20px;
+}
+
+.changeAmountContainer button {
+    background-color: var(--green);
+    color: var(--white);
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.changeAmountContainer button:first-of-type {
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+}
+
+.changeAmountContainer button:last-of-type {
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+}

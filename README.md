@@ -1,27 +1,28 @@
-# React + TypeScript + Vite
+# Recipes Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Overview
+This project was crafted as a part of my front-end developer portfolio. The application serves as a platform for exploring various recipes, with the ability to filter them based on cuisine or dietary preferences. It leverages a mix of familiar and cutting-edge technologies, outlined below.
 
-Currently, two official plugins are available:
+## Technologies Utilized
+- React
+- Axios
+- React Hook Forms
+- React Router
+- React Redux
+- Styled Components
+- Chart.js
+- React-ChartJS-2
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation Guide
+Follow these simple steps to get the project up and running on your local machine:
 
-## Expanding the ESLint configuration
+1. Download the project files to your local environment.
+2. Open your terminal and execute the command `npm install`.
+3. Run `npm run dev`.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Local Server Access
+Be sure to check the terminal output for the correct local server URL, as it may vary:
 
-- Configure the top-level `parserOptions` property like this:
+- Frontend: [http://localhost:5173](http://localhost:5173)
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Ensure that you've followed the installation steps accurately to successfully set up and run the project locally. Feel free to customize and expand upon this project as per your needs. If you have any queries or feedback, please don't hesitate to reach out to me at [sjoerd.kessels2002@gmail.com](sjoerd.kessels2002@gmail.com).

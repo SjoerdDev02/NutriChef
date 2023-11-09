@@ -3,7 +3,7 @@ import styles from './Features.module.css';
 const Features = () => {
     return (
         <section className={styles.featuresContainer}>
-            <h1>Elevate your <span>culinary experience</span> with Nutri<span>Chef</span></h1>
+            <h2>Elevate your <span>culinary experience</span> with Nutri<span>Chef</span></h2>
             <div>
                 <article>
                     <h4>Plantbased recipes</h4>

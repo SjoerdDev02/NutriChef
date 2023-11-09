@@ -25,6 +25,10 @@
     gap: 0.5rem;
 }
 
+.featuresContainer h2 {
+    color: var(--dark-blue);
+}
+
 .featuresContainer span {
     color: var(--green);
 }
