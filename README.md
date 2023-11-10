@@ -9,7 +9,7 @@ This project was crafted as a part of my front-end developer portfolio. The appl
 - React Hook Forms
 - React Router
 - React Redux
-- Styled Components
+- CSS Modules
 - Chart.js
 - React-ChartJS-2
 
