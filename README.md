@@ -19,6 +19,7 @@ Follow these simple steps to get the project up and running on your local machin
 1. Download the project files to your local environment.
 2. Open your terminal and execute the command `npm install`.
 3. Run `npm run dev`.
+4. Navigate in the folders to src > assets > hooks > useFetchRecipes.ts and add your key and id in line 8 and 9.
 
 ## Local Server Access
 Be sure to check the terminal output for the correct local server URL, as it may vary:
